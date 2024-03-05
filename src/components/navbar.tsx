@@ -9,7 +9,7 @@ const Navbar = () => {
         {/* <img src={logo} alt='logo' className='w-18 h-18 object-contain' /> */}
       </Link>
       <nav className='flex text-lg gap-7 font-medium'>
-        <Link href='/about' >
+        <Link href='/' >
           About
         </Link>
         <Link href='/projects'>

@@ -241,7 +241,7 @@ export const projects = [
     {
         iconUrl: snapgram,
         theme: 'btn-back-pink',
-        name: 'ANGOLIST - Ergonomics Checklist App',
+        name: 'ANGOLIST - Ergonomic Checklist',
         description: 'Access and evaluate your app to ensure it\'s user-friendly for customers in general, including an easy onboarding process.',
         link: 'https://github.com/R-o-d-r-i-g-o/angolist---mobile',
     },
