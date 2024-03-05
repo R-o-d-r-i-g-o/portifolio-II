@@ -16,9 +16,12 @@ import { experiences, skills } from "../constants";
 export default function Home() {
   const { theme, setTheme } = useTheme();
 
+  const isLightTheme = () =>
+    theme === "light"
+
   const handleThemeChange = () => {
     console.log('o que veio')
-    setTheme(theme === "light" ? "dark" : "light");
+    setTheme(isLightTheme() ? "dark" : "light");
   }
 
   return (
@@ -80,7 +83,6 @@ export default function Home() {
             {experiences.map((experience) => (
               <VerticalTimelineElement
                 visible
-                // className="black:bg-white bg-slate-500"
                 key={experience.company_name}
                 date={experience.date}
                 iconStyle={{ background: experience.iconBg }}
@@ -93,33 +95,33 @@ export default function Home() {
                     />
                   </div>
                 }
-                // contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
                 contentStyle={{
-                  // background: 'rgb(33, 150, 243)',
-                  // color: '#fff',
                   borderBottom: "8px",
                   borderStyle: "solid",
                   borderBottomColor: experience.iconBg,
                   boxShadow: "none",
+                  background: isLightTheme()
+                    ? 'rgba(255, 255, 255, .4)'
+                    : 'rgba(61, 65, 73, .4)',
+                }}
+                contentArrowStyle={{
+                  borderRight: isLightTheme()
+                    ? '7px solid rgba(255, 255, 255, .4)'
+                    : '7px solid rgba(61, 65, 73, .4)',
                 }}
               >
-                <div className="black:bg-white bg-slate-500">
-                  <h3 className='text-black text-xl font-poppins font-semibold'>
-                    {experience.title}
-                  </h3>
-                  <p
-                    className='text-black-500 font-medium text-base'
-                    style={{ margin: 0 }}
-                  >
-                    {experience.company_name}
-                  </p>
-                </div>
+                <h3 className='dark:text-white text-black text-xl font-poppins font-semibold'>
+                  {experience.title}
+                </h3>
+                <p className='dark:text-white text-black font-medium text-base !m-0'>
+                  {experience.company_name}
+                </p>
 
                 <ul className='my-5 list-disc ml-5 space-y-2'>
                   {experience.points.map((point, index) => (
                     <li
                       key={`experience-point-${index}`}
-                      className='text-black-500/50 font-normal pl-1 text-sm'
+                      className='dark:text-white text-black/80 font-normal pl-1 text-sm'
                     >
                       {point}
                     </li>
