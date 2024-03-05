@@ -7,7 +7,7 @@ const currentYear = new Date().getFullYear();
 
 const Footer = () => (
   <footer className='footer font-poppins'>
-    <hr className='border-slate-200'/>
+    <hr className='dark:border-slate-200 border-black'/>
     <div className='footer-container flex flex-col md:flex-row justify-center md:justify-between'>
       <p>
         © {currentYear} <strong>R. M. Ribeiro</strong>. All rights reserved.
