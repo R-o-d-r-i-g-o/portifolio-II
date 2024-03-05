@@ -1,18 +1,25 @@
 "use client"
 
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, ChangeEvent } from "react";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = ({ target: { name, value } }) => {
-    setForm({ ...form, [name]: value });
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+
+    setForm((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
+
+    console.log('o que vieo', form)
 
     // emailjs
     //   .send(
@@ -115,7 +122,7 @@ const Contact = () => {
       </div>
 
       <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
-             </div>
+      </div>
     </section>
   );
 };
