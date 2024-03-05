@@ -13,12 +13,14 @@
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-lazyload": "^3.2.0",
     "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-lazyload": "^3.2.3",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "@types/tailwindcss": "^3.1.0",
     "autoprefixer": "^10.0.1",
