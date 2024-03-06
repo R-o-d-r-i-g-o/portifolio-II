@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, FormEvent, ChangeEvent } from "react";
+import Globe from '../../components/globe'
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -68,15 +69,19 @@ const Contact = () => {
   };
 
   return (
-    <section className='relative flex lg:flex-row flex-col max-container'>
-      <div className='flex-1 min-w-[50%] flex flex-col'>
-        <h1 className='head-text'>Get in Touch</h1>
+    <section className='relative flex lg:flex-row flex-col-reverse max-container -mt-20 md:mt-0'>
+      <div className='flex-1 min-w-[50%] flex flex-col z-10 -mt-20 md:z-0 md:mt-0'>
+        <h1 className='head-text'>
+          <span className='blue-gradient_text drop-shadow font-semibold'>
+            Get in Touch
+          </span>
+        </h1>
 
         <form
           onSubmit={handleSubmit}
           className='w-full flex flex-col gap-7 mt-14'
         >
-          <label className='text-black-500 font-semibold'>
+          <label className='dark:text-white text-black-500 font-semibold'>
             Name
             <input
               type='text'
@@ -88,7 +93,7 @@ const Contact = () => {
               onChange={handleChange}
             />
           </label>
-          <label className='text-black-500 font-semibold'>
+          <label className='dark:text-white text-black-500 font-semibold'>
             Email
             <input
               type='email'
@@ -100,7 +105,7 @@ const Contact = () => {
               onChange={handleChange}
             />
           </label>
-          <label className='text-black-500 font-semibold'>
+          <label className='dark:text-white text-black-500 font-semibold'>
             Your Message
             <textarea
               name='message'
@@ -122,6 +127,7 @@ const Contact = () => {
       </div>
 
       <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
+        <Globe />
       </div>
     </section>
   );
