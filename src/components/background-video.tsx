@@ -1,7 +1,7 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
 import { useTheme } from 'next-themes'
+import React, { useState, useLayoutEffect } from "react"
 
 import LazyLoad from 'react-lazyload';
 
@@ -9,7 +9,7 @@ const BackgroundVideo = () => {
   const { theme } = useTheme()
   const [selectedVideo, setSelectedVideo] = useState('')
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setSelectedVideo(theme === 'light'
       ? '/videos/background-video-white.mp4'
       : '/videos/background-video-black.mp4'

@@ -1,26 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
-"use client"
 
 import Image from "next/image";
-import { useTheme } from "next-themes";
-
 import CTA from "../components/cta";
 
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import Timeline from '../components/vertical-timeline'
 
 import { experiences, skills } from "../constants";
 
-export default function Home() {
-  const { theme } = useTheme();
-
-  const isLightTheme = () =>
-    theme === "light"
-
-  return (
-    <section className='max-container'>
+const Home = () => (
+  <section className='max-container'>
     <h1 className='head-text'>
       <span className='flex gap-3'>
         Hello, I'm
@@ -30,7 +18,6 @@ export default function Home() {
         <span className="animate-waving-hand">👋🏻</span>
       </span>
     </h1>
-
     <div className='mt-5 flex flex-col gap-3 dark:text-slate-500 text-black'>
       <p>
         Software Engineer at Q2 Group, based in Brazil, responsible for planning and developing
@@ -41,10 +28,8 @@ export default function Home() {
         experience, and robust security measures, consistently achieving high delivery rates.
       </p>
     </div>
-
     <div className='py-10 flex flex-col'>
       <h3 className='subhead-text'>Technologies.</h3>
-
       <div className='mt-16 flex flex-wrap gap-12'>
         {skills.map((skill) => (
           <div className='block-container w-20 h-20' key={skill.name}>
@@ -60,7 +45,6 @@ export default function Home() {
         ))}
       </div>
     </div>
-
     <div className='py-16'>
       <h3 className='subhead-text'>Work Experience.</h3>
       <div className='mt-5 flex flex-col gap-3 dark:text-slate-500 text-black'>
@@ -72,63 +56,13 @@ export default function Home() {
           Note: Certifications will be provided exclusively on LinkedIn.
         </p>
       </div>
-
       <div className='mt-12 flex'>
-          <VerticalTimeline>
-            {experiences.map((experience) => (
-              <VerticalTimelineElement
-                visible
-                key={experience.company_name}
-                date={experience.date}
-                iconStyle={{ background: experience.iconBg }}
-                icon={
-                  <div className='flex justify-center items-center w-full h-full'>
-                    <Image
-                      src={experience.icon}
-                      alt={experience.company_name}
-                      className='w-[60%] h-[60%] object-contain'
-                    />
-                  </div>
-                }
-                contentStyle={{
-                  borderBottom: "8px",
-                  borderStyle: "solid",
-                  borderBottomColor: experience.iconBg,
-                  boxShadow: "none",
-                  background: isLightTheme()
-                    ? 'rgba(255, 255, 255, .4)'
-                    : 'rgba(61, 65, 73, .4)',
-                }}
-                contentArrowStyle={{
-                  borderRight: isLightTheme()
-                    ? '7px solid rgba(255, 255, 255, .4)'
-                    : '7px solid rgba(61, 65, 73, .4)',
-                }}
-              >
-                <h3 className='dark:text-white text-black text-xl font-poppins font-semibold'>
-                  {experience.title}
-                </h3>
-                <p className='dark:text-white text-black font-medium text-base !m-0'>
-                  {experience.company_name}
-                </p>
-
-                <ul className='my-5 list-disc ml-5 space-y-2'>
-                  {experience.points.map((point, index) => (
-                    <li
-                      key={`experience-point-${index}`}
-                      className='dark:text-white text-black/80 font-normal pl-1 text-sm'
-                    >
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-              </VerticalTimelineElement>
-            ))}
-          </VerticalTimeline>
-        </div>
+        <Timeline data={experiences} />
       </div>
+    </div>
     <hr className='dark:border-slate-200 border-black'/>
     <CTA />
   </section>
-  );
-}
+);
+
+export default Home;
