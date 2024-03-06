@@ -18,7 +18,7 @@ const Navbar = () => {
   return (
     <header className='header h-20'>
       <button onClick={handleThemeChange}>
-        {isLightTheme() ? <MdOutlineLightMode size={30} /> : <MdOutlineDarkMode size={30} /> }
+        {isLightTheme() ? <MdOutlineDarkMode size={30} /> : <MdOutlineLightMode size={30} /> }
       </button>
       <nav className='flex text-lg gap-7 font-medium'>
         <Link href='/' >
