@@ -63,9 +63,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-
-      <hr className='border-slate-200' />
-
+      <hr className='dark:border-slate-200 border-black' />
       <CTA />
     </section>
   );

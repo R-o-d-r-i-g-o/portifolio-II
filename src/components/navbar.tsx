@@ -1,13 +1,25 @@
+"use client"
+
 import Link from 'next/link';
-import Image from "next/image";
+import { useTheme } from "next-themes";
+
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 const Navbar = () => {
+  const { theme, setTheme } = useTheme();
+
+  const isLightTheme = () =>
+    theme === "light"
+
+  const handleThemeChange = () => {
+    setTheme(isLightTheme() ? "dark" : "light");
+  }
+
   return (
     <header className='header h-20'>
-      <Link href='/'>
-      <Image src="logo.svg" alt='logo' className='w-18 h-18 object-contain' width={40} height={40}/>
-        {/* <img src={logo} alt='logo' className='w-18 h-18 object-contain' /> */}
-      </Link>
+      <button onClick={handleThemeChange}>
+        {isLightTheme() ? <MdOutlineLightMode size={30} /> : <MdOutlineDarkMode size={30} /> }
+      </button>
       <nav className='flex text-lg gap-7 font-medium'>
         <Link href='/' >
           About

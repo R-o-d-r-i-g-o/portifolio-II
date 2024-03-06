@@ -14,15 +14,10 @@ import {
 import { experiences, skills } from "../constants";
 
 export default function Home() {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   const isLightTheme = () =>
     theme === "light"
-
-  const handleThemeChange = () => {
-    console.log('o que veio')
-    setTheme(isLightTheme() ? "dark" : "light");
-  }
 
   return (
     <section className='max-container'>
@@ -132,12 +127,8 @@ export default function Home() {
           </VerticalTimeline>
         </div>
       </div>
-
-
     <hr className='dark:border-slate-200 border-black'/>
-
     <CTA />
-    <button onClick={handleThemeChange}>Light Mode</button>
   </section>
   );
 }
