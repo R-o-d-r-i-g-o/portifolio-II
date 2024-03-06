@@ -6,47 +6,39 @@ import { GlobeMethods } from "react-globe.gl";
 import countries from '../constants/globe-countries.json'
 
 import Loading from '../app/loading'
+import { useTheme } from "next-themes";
 
 const GlobeComp = lazy(() => import("react-globe.gl"))
 
-const interpolate = (start: number, end: number, percentage: number) => {
-  return Math.round(start + (end - start) * percentage);
-};
-
-const generateGradientColor = () => {
-  const colorStart = [51, 100, 244]; // light blue
-  const colorEnd = [0, 0, 128]; // dark blue
-
-  const percentage = Math.random();
-  const interpolatedColor =
-    colorStart.map((start, index) => interpolate(start, colorEnd[index], percentage));
-
-  return `rgb(${interpolatedColor.join(',')})`;
-};
-
 const Globe = () => {
+  const { theme } = useTheme();
+
   const globeEl = useRef<GlobeMethods>();
   const fixedHeightPX = 500
 
   const [useClient, setUseClient] = useState(false)
   const [globeWidth, setGlobeWidth] = useState<number>()
 
+  const colorTheme = theme !== "light"
+    ? { globeImageUrl: '' }
+    : { globeImageUrl: "globe-white-surface.png", hexPolygonColor: 'rgb(0,0,0)' }
+
   const loadEffects = () => {
     if (!globeEl.current)
       return;
 
-    // globeEl.current.controls().enableZoom = false;
-    globeEl.current!.controls().autoRotate = true;
-    globeEl.current!.controls().autoRotateSpeed = 1;
-    globeEl.current!.pointOfView({ lat: 0, lng: 0, altitude: 2 });
+    globeEl.current.controls().autoRotate = true;
+    globeEl.current.controls().autoRotateSpeed = 1;
+    globeEl.current.pointOfView({ lat: 0, lng: 0, altitude: 2 });
 
     if (window.innerWidth <= 880)
-      globeEl.current?.pointOfView({ lat: 0, lng: 0, altitude: 2.6 })
+      globeEl.current.pointOfView({ lat: 0, lng: 0, altitude: 2.6 })
   }
 
   const suspectEffect = (
     <Suspense fallback={<Loading />}>
       <GlobeComp
+        key={theme}
         width={globeWidth}
         height={fixedHeightPX}
         onGlobeReady={loadEffects}
@@ -58,7 +50,7 @@ const Globe = () => {
         hexPolygonResolution={2}
         hexPolygonMargin={0.3}
         hexPolygonUseDots={true}
-        hexPolygonColor={generateGradientColor}
+        {...colorTheme}
       />
     </Suspense>
   );
