@@ -5,6 +5,8 @@ import Providers from "../context/providers";
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 
+import { ToastContainer } from "react-toastify";
+
 import "./globals.css";
 import "react-vertical-timeline-component/style.min.css";
 
@@ -25,6 +27,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Providers>
           <Navbar />
+          <ToastContainer />
           {children}
           <Footer />
         </Providers>

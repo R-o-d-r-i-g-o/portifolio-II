@@ -2,10 +2,15 @@
 
 import { useState, FormEvent, ChangeEvent } from "react";
 import Globe from '../../components/globe'
+import useToast from '../../hooks/useToast'
+
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
+
+  const { success, failure } = useToast();
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -16,56 +21,30 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
+    try {
+      await emailjs.send(
+        "personal_email_send",
+        "template_dxju7hd",
+        {
+          from_name: form.name,
+          to_name: "Rodrigo M. Ribeiro",
+          from_email: form.email,
+          to_email: "rodrigomarqribeiro@gmail.com",
+          message: form.message,
+        },
+        "OPgvWU8zNZfWwXWUt"
+      );
 
-    console.log('o que vieo', form)
-
-    // emailjs
-    //   .send(
-    //     "personal_email_send",
-    //     "template_dxju7hd",
-    //     {
-    //       from_name: form.name,
-    //       to_name: "Rodrigo M. Ribeiro",
-    //       from_email: form.email,
-    //       to_email: "rodrigomarqribeiro@gmail.com",
-    //       message: form.message,
-    //     },
-    //     "OPgvWU8zNZfWwXWUt",
-    //   )
-    //   .then(
-    //     () => {
-    //       setLoading(false);
-    //       showAlert({
-    //         show: true,
-    //         text: "Thank you for your message 😃",
-    //         type: "success",
-    //       });
-
-    //       setTimeout(() => {
-    //         hideAlert(false);
-    //         setCurrentAnimation("idle");
-    //         setForm({
-    //           name: "",
-    //           email: "",
-    //           message: "",
-    //         });
-    //       }, [3000]);
-    //     },
-    //     (error) => {
-    //       setLoading(false);
-    //       console.error(error);
-    //       setCurrentAnimation("idle");
-
-    //       showAlert({
-    //         show: true,
-    //         text: "I didn't receive your message 😢",
-    //         type: "danger",
-    //       });
-    //     }
-    //   );
+      success("Email successfully sent")
+    } catch (err) {
+      console.log(err)
+      failure("Error sending email, try later please.")
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
