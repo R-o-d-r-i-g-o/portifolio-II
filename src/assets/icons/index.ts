@@ -39,6 +39,7 @@ import oracle from './oracle.svg'
 import azure from './azure.svg'
 import rabbitMQ from './rabbitmq.svg'
 import easyPanel from './easy-panel.svg'
+import githubBlue from './github-blue.svg'
 
 export {
     git,
@@ -81,4 +82,5 @@ export {
     azure,
     rabbitMQ,
     easyPanel,
+    githubBlue,
 }

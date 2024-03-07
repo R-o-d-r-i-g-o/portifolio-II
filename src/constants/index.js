@@ -1,6 +1,5 @@
 import { irroba, q2 } from "../assets/images";
 import {
-    // car,
     contact,
     estate,
     git,
@@ -11,11 +10,9 @@ import {
     mongodb,
     nextjs,
     nodejs,
-    // pricewise,
     reactNative,
     snapgram,
     summiz,
-    // threads,
     typescript,
     python,
     gitlab,
@@ -34,6 +31,7 @@ import {
     azure,
     rabbitMQ,
     easyPanel,
+    githubBlue,
 } from "../assets/icons";
 
 export const skills = [
@@ -206,7 +204,7 @@ export const socialLinks = [
     },
     {
         name: 'GitHub',
-        iconUrl: github,
+        iconUrl: githubBlue,
         link: 'https://github.com/R-o-d-r-i-g-o',
     },
     {
