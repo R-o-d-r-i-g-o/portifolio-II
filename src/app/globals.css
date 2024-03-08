@@ -114,6 +114,10 @@ body:has(.card[data-color="green"]:hover) {
   box-shadow: 4px 0 10px rgba(255, 255, 255, .4);
 }
 
+.clip-bottom {
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
 .block-container .btn-back-red {
   background: linear-gradient(135deg, #ff4b1f -20%, #ff9068 120%);
 }

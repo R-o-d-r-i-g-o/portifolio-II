@@ -132,7 +132,7 @@ export const skills = [
     },
     {
         imageUrl: flutter,
-        Name: "Flutter",
+        name: "Flutter",
         type: "Mobile"
     },
     {
