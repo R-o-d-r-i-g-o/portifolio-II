@@ -7,9 +7,13 @@ import Tooltip from '../components/tooltip'
 import Timeline from '../components/vertical-timeline'
 
 import { experiences, skills } from "../constants";
+import Cube from '../components/cube'
 
 const Home = () => (
   <section className='max-container'>
+    <div className="-mt-16">
+      <Cube />
+    </div>
     <h1 className='head-text'>
       <span className='flex gap-3'>
         Hello, I'm
