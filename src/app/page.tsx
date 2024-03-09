@@ -1,10 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 
+import { Suspense } from 'react'
+
 import Image from "next/image";
 import CTA from "../components/cta";
 import Tooltip from '../components/tooltip'
 
 import Timeline from '../components/vertical-timeline'
+
+import Loading from './loading'
 
 import { experiences, skills } from "../../public/mocks";
 import Cube from '../components/cube'
@@ -35,24 +39,26 @@ const Home = () => (
     </div>
     <div className='py-10 flex flex-col'>
       <h3 className='subhead-text'>Technologies.</h3>
-      <div className='mt-16 flex md:justify-start justify-center flex-wrap gap-12'>
-        {skills.map((skill, i) => (
-          <Tooltip key={i} message={skill.name}>
-            <div className='block-container w-20 h-20'>
-              <div className='btn-back rounded-xl'/>
-              <div className='btn-front rounded-xl flex justify-center items-center'>
-                <Image
-                  src={skill.imageUrl}
-                  alt={skill.name}
-                  className='w-1/2 h-1/2 object-contain'
-                  height={20}
-                  width={20}
-                />
+      <Suspense fallback={<Loading />}>
+        <div className='mt-16 flex md:justify-start justify-center flex-wrap gap-12'>
+          {skills.map((skill, i) => (
+            <Tooltip key={i} message={skill.name}>
+              <div className='block-container w-20 h-20'>
+                <div className='btn-back rounded-xl'/>
+                <div className='btn-front rounded-xl flex justify-center items-center'>
+                  <Image
+                    src={skill.imageUrl}
+                    alt={skill.name}
+                    className='w-1/2 h-1/2 object-contain'
+                    height={20}
+                    width={20}
+                  />
+                </div>
               </div>
-            </div>
-          </Tooltip>
-        ))}
-      </div>
+            </Tooltip>
+          ))}
+        </div>
+      </Suspense>
     </div>
     <div className='py-16'>
       <h3 className='subhead-text'>Work Experience.</h3>
