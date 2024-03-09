@@ -45,6 +45,8 @@ const Home = () => (
                   src={skill.imageUrl}
                   alt={skill.name}
                   className='w-1/2 h-1/2 object-contain'
+                  height={20}
+                  width={20}
                 />
               </div>
             </div>

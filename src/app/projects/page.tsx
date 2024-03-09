@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import CTA from "../../components/cta";
 import { projects } from "../../constants";
-import { arrow } from "../../assets/icons";
+const arrow = '/icons/arrow.svg'
 
 const Projects = () => {
   return (
@@ -35,6 +35,8 @@ const Projects = () => {
                   src={project.iconUrl}
                   alt='threads'
                   className='w-1/2 h-1/2 object-contain'
+                  height={20}
+                  width={20}
                 />
               </div>
             </div>
@@ -57,6 +59,8 @@ const Projects = () => {
                   src={arrow}
                   alt='arrow'
                   className='w-4 h-4 object-contain'
+                  height={20}
+                  width={20}
                 />
               </div>
             </div>

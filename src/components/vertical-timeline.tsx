@@ -11,7 +11,7 @@ import {
 type Experience = {
     title: string;
     company_name: string;
-    icon: StaticImageData;
+    icon: string;
     iconBg: string;
     date: string;
     points: string[];
@@ -22,8 +22,6 @@ const Timeline = ({ data }: { data: Array<Experience> }) => {
 
   const isLightTheme = () =>
     theme === "light"
-
-    console.log('o que veio', typeof data)
 
   return (
     <VerticalTimeline>
@@ -39,6 +37,8 @@ const Timeline = ({ data }: { data: Array<Experience> }) => {
                 src={experience.icon}
                 alt={experience.company_name}
                 className='w-[60%] h-[60%] object-contain'
+                height={20}
+                width={20}
               />
             </div>
           }

@@ -1,167 +1,131 @@
-import { irroba, q2 } from "../assets/images";
-import {
-    contact,
-    estate,
-    git,
-    github,
-    cSharp,
-    javascript,
-    linkedin,
-    mongodb,
-    nextjs,
-    nodejs,
-    reactNative,
-    snapgram,
-    summiz,
-    typescript,
-    python,
-    gitlab,
-    go,
-    redis,
-    postgres,
-    sqlServer,
-    sqs,
-    docker,
-    kubernets,
-    terraform,
-    appCenter,
-    flutter,
-    firebase,
-    oracle,
-    azure,
-    rabbitMQ,
-    easyPanel,
-    githubBlue,
-} from "../assets/icons";
-
 export const skills = [
     {
-        imageUrl: cSharp,
+        imageUrl: '/icons/c-sharp.svg',
         name: 'C#',
         type: "Backend",
     },
     {
-        imageUrl: python,
+        imageUrl: '/icons/python.svg',
         name: "Python",
         type: "Backend",
     },
     {
-        imageUrl: git,
+        imageUrl: '/icons/git.svg',
         name: "Git",
         type: "Version Control",
     },
     {
-        imageUrl: github,
+        imageUrl: '/icons/github.svg',
         name: "GitHub",
         type: "Version Control",
     },
     {
-        imageUrl: gitlab,
+        imageUrl: '/icons/gitlab.svg',
         name: "GitLab",
         type: "Version Control",
     },
     {
-        imageUrl: javascript,
+        imageUrl: '/icons/javascript.svg',
         name: "JavaScript",
         type: "Frontend",
     },
     {
-        imageUrl: typescript,
+        imageUrl: '/icons/typescript.svg',
         name: "TypeScript",
         type: "Frontend",
     },
     {
-        imageUrl: mongodb,
+        imageUrl: '/icons/mongodb.svg',
         name: "MongoDB",
         type: "Database",
     },
     {
-        imageUrl: redis,
+        imageUrl: '/icons/redis.svg',
         name: "Redis",
         type: "Cache-Database"
     },
     {
-        imageUrl: oracle,
+        imageUrl: '/icons/oracle.svg',
         name: "Oracle DB",
         type: "Database"
     },
     {
-        imageUrl: postgres,
+        imageUrl: '/icons/postgresql.svg',
         name: "PostgreSQL",
         type: "Database"
     },
     {
-        imageUrl: sqlServer,
+        imageUrl: '/icons/sql-server.svg',
         name: "SQL Server",
         type: "Database",
     },
     {
-        imageUrl: go,
+        imageUrl: '/icons/go.svg',
         name: "Golang",
         type: "Backend",
     },
     {
-        imageUrl: azure,
+        imageUrl: '/icons/azure.svg',
         name: "Azure",
         type: "cloud"
     },
     {
-        imageUrl: easyPanel,
+        imageUrl: '/icons/easy-panel.svg',
         name: "Easy Panel",
         type: "cloud"
     },
     {
-        imageUrl: sqs,
+        imageUrl: '/icons/aws-sqs.svg',
         name: "SQS",
         type: "message broker"
     },
     {
-        imageUrl: rabbitMQ,
+        imageUrl: '/icons/rabbitmq.svg',
         name: "RabbitMQ",
         type: "message broker"
     },
     {
-        imageUrl: nextjs,
+        imageUrl: '/icons/nextjs.svg',
         name: "Next.js",
         type: "Frontend",
     },
     {
-        imageUrl: nodejs,
+        imageUrl: '/icons/nodejs.svg',
         name: "Node.js",
         type: "Backend",
     },
     {
-        imageUrl: flutter,
+        imageUrl: '/icons/flutter.svg',
         name: "Flutter",
         type: "Mobile"
     },
     {
-        imageUrl: reactNative,
+        imageUrl: '/icons/react-native.svg',
         name: "React Native",
         type: "Mobile",
     },
     {
-        imageUrl: firebase,
+        imageUrl: '/icons/firebase.svg',
         name: "Firebase",
         type: "CI/CD"
     },
     {
-        imageUrl: docker,
+        imageUrl: '/icons/docker.svg',
         name: "docker",
         type: "CI/CD"
     },
     {
-        imageUrl: kubernets,
+        imageUrl: '/icons/kubernets.svg',
         name: "Kubernets",
         type: "CI/CD"
     },
     {
-        imageUrl: terraform,
+        imageUrl: '/icons/terraform.svg',
         name: "Terraform",
         type: "CI/CD"
     },
     {
-        imageUrl: appCenter,
+        imageUrl: '/icons/app-center.svg',
         name: "App Center",
         type: "CI/CD"
     }
@@ -171,7 +135,7 @@ export const experiences = [
     {
         title: "Software Enginner (intern.)",
         company_name: "Irroba",
-        icon: irroba,
+        icon: '/company/irroba.jpeg',
         iconBg: "#E3022C",
         date: "jan 2022 - jun 2022",
         points: [
@@ -183,7 +147,7 @@ export const experiences = [
     {
         title: "Software Enginner",
         company_name: "Q2 Group",
-        icon: q2,
+        icon: '/company/q2.jpg',
         iconBg: "#234EF2",
         date: "Jun 2022 - Present",
         points: [
@@ -199,17 +163,17 @@ export const experiences = [
 export const socialLinks = [
     {
         name: 'Contact',
-        iconUrl: contact,
+        iconUrl: '/icons/contact.svg',
         link: '/contact',
     },
     {
         name: 'GitHub',
-        iconUrl: githubBlue,
+        iconUrl: '/icons/github-blue.svg',
         link: 'https://github.com/R-o-d-r-i-g-o',
     },
     {
         name: 'LinkedIn',
-        iconUrl: linkedin,
+        iconUrl: '/icons/linkedin.svg',
         link: 'https://www.linkedin.com/in/rodrigo-marques-ribeiro/',
     }
 ];
@@ -237,21 +201,21 @@ export const projects = [
     //     link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
     // },
     {
-        iconUrl: snapgram,
+        iconUrl: 'icons/snapgram.svg',
         theme: 'btn-back-pink',
         name: 'ANGOLIST - Ergonomic Checklist',
         description: 'Access and evaluate your app to ensure it\'s user-friendly for customers in general, including an easy onboarding process.',
         link: 'https://github.com/R-o-d-r-i-g-o/angolist---mobile',
     },
     {
-        iconUrl: estate,
+        iconUrl: 'icons/estate.svg',
         theme: 'btn-back-black',
         name: 'P.O.S. Machine Printer Integration',
         description: 'Print any document directly from an Android-based payment machine. Enjoy the convenience of having a portable printer at your fingertips.',
         link: 'https://github.com/R-o-d-r-i-g-o/POS_Printer',
     },
     {
-        iconUrl: summiz,
+        iconUrl: 'icons/summiz.svg',
         theme: 'btn-back-yellow',
         name: 'Dev Superior Movie (DSMovie)',
         description: 'A movie-classification web app to save users\' opinions, comments, and classify movies according to them. Made with spring boot and react typescript.',
