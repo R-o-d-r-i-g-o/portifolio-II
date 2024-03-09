@@ -1,17 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 
-import { Suspense } from 'react'
+import { Suspense, lazy } from 'react'
 
 import Image from "next/image";
 import CTA from "../components/cta";
 import Tooltip from '../components/tooltip'
 
-import Timeline from '../components/vertical-timeline'
-
 import Loading from './loading'
 
 import { experiences, skills } from "../../public/mocks";
-import Cube from '../components/cube'
+
+const Cube = lazy(() => import('../components/cube'));
+
+const Timeline = lazy(() => import('../components/vertical-timeline'));
 
 const Home = () => (
   <section className='max-container'>
@@ -72,7 +73,9 @@ const Home = () => (
         </p>
       </div>
       <div className='mt-12 flex'>
-        <Timeline data={experiences} />
+        <Suspense fallback={<Loading />}>
+          <Timeline data={experiences} />
+        </Suspense>
       </div>
     </div>
     <hr className='dark:border-slate-200 border-black'/>
