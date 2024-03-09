@@ -35,7 +35,7 @@ const Home = () => (
     </div>
     <div className='py-10 flex flex-col'>
       <h3 className='subhead-text'>Technologies.</h3>
-      <div className='mt-16 flex flex-wrap gap-12'>
+      <div className='mt-16 flex md:justify-start justify-center flex-wrap gap-12'>
         {skills.map((skill, i) => (
           <Tooltip key={i} message={skill.name}>
             <div className='block-container w-20 h-20'>
