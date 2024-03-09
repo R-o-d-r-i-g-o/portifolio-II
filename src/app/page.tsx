@@ -4,13 +4,14 @@ import { Suspense, lazy } from 'react'
 
 import Image from "next/image";
 import CTA from "../components/cta";
-import Tooltip from '../components/tooltip'
 
 import Loading from './loading'
 
 import { experiences, skills } from "../../public/mocks";
 
 const Cube = lazy(() => import('../components/cube'));
+
+const Tooltip = lazy(() => import('../components/tooltip'));
 
 const Timeline = lazy(() => import('../components/vertical-timeline'));
 
