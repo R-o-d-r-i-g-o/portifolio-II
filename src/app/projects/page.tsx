@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from "next/image";
 
 import CTA from "../../components/cta";
-import { projects } from "../../constants";
+import { projects } from "../../../public/mocks";
 const arrow = '/icons/arrow.svg'
 
 const Projects = () => {

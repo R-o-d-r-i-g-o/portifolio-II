@@ -1,0 +1,23 @@
+[
+    {
+        "iconUrl": "icons/snapgram.svg",
+        "theme": "btn-back-pink",
+        "name": "ANGOLIST - Ergonomic Checklist",
+        "description": "Access and evaluate your app to ensure it's user-friendly for customers in general, including an easy onboarding process.",
+        "link": "https://github.com/R-o-d-r-i-g-o/angolist---mobile"
+    },
+    {
+        "iconUrl": "icons/estate.svg",
+        "theme": "btn-back-black",
+        "name": "P.O.S. Machine Printer Integration",
+        "description": "Print any document directly from an Android-based payment machine. Enjoy the convenience of having a portable printer at your fingertips.",
+        "link": "https://github.com/R-o-d-r-i-g-o/POS_Printer"
+    },
+    {
+        "iconUrl": "icons/summiz.svg",
+        "theme": "btn-back-yellow",
+        "name": "Dev Superior Movie (DSMovie)",
+        "description": "A movie-classification web app to save users' opinions, comments, and classify movies according to them. Made with spring boot and react typescript.",
+        "link": "https://github.com/R-o-d-r-i-g-o/dsmovie"
+    }
+]

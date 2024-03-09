@@ -3,7 +3,7 @@
 import React, { useEffect, Suspense, useState, useRef, memo, lazy } from 'react'
 
 import { GlobeMethods } from "react-globe.gl";
-import countries from '../constants/globe-countries.json'
+import { globeCountries } from '../../public/mocks'
 
 import Loading from '../app/loading'
 import { useTheme } from "next-themes";
@@ -46,7 +46,7 @@ const Globe = () => {
         ref={globeEl}
         showAtmosphere
         enablePointerInteraction
-        hexPolygonsData={countries.features}
+        hexPolygonsData={globeCountries.features}
         hexPolygonResolution={2}
         hexPolygonMargin={0.3}
         hexPolygonUseDots={true}

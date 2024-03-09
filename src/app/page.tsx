@@ -6,7 +6,7 @@ import Tooltip from '../components/tooltip'
 
 import Timeline from '../components/vertical-timeline'
 
-import { experiences, skills } from "../constants";
+import { experiences, skills } from "../../public/mocks";
 import Cube from '../components/cube'
 
 const Home = () => (
