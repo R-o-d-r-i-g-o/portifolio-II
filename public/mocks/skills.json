@@ -86,7 +86,12 @@
     },
     {
         "imageUrl": "/icons/nextjs.svg",
-        "name": "Next.js",
+        "name": "Next",
+        "type": "Frontend"
+    },
+    {
+        "imageUrl": "/icons/angular.svg",
+        "name": "Angular",
         "type": "Frontend"
     },
     {
