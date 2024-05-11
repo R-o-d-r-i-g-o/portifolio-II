@@ -23,7 +23,7 @@
     "react-three-fiber": "^6.0.13",
     "react-toastify": "^10.0.4",
     "react-vertical-timeline-component": "^3.6.0",
-    "three": "^0.162.0"
+    "three": "^0.164.1"
   },
   "devDependencies": {
     "@types/node": "^20",
