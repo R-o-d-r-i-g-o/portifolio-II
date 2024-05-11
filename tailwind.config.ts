@@ -16,37 +16,37 @@ const config: Config = {
       },
       colors: {
         gray: {
-          200: "#D5DAE1"
+          200: "#D5DAE1",
         },
         black: {
           DEFAULT: "#000",
-          500: "#1D2235"
+          500: "#1D2235",
         },
         blue: {
-          500: "#2b77e7"
-        }
+          500: "#2b77e7",
+        },
       },
       fontFamily: {
         worksans: ["Work Sans", "sans-serif"],
-        poppins: ['Poppins', "sans-serif"]
+        poppins: ["Poppins", "sans-serif"],
       },
       boxShadow: {
-        card: '0px 1px 2px 0px rgba(0, 0, 0, 0.05)'
+        card: "0px 1px 2px 0px rgba(0, 0, 0, 0.05)",
       },
       keyframes: {
         wave: {
-          '0%': { transform: 'rotate(0.0deg)' },
-          '10%': { transform: 'rotate(14deg)' },
-          '20%': { transform: 'rotate(-8deg)' },
-          '30%': { transform: 'rotate(14deg)' },
-          '40%': { transform: 'rotate(-4deg)' },
-          '50%': { transform: 'rotate(10.0deg)' },
-          '60%': { transform: 'rotate(0.0deg)' },
-          '100%': { transform: 'rotate(0.0deg)' },
+          "0%": { transform: "rotate(0.0deg)" },
+          "10%": { transform: "rotate(14deg)" },
+          "20%": { transform: "rotate(-8deg)" },
+          "30%": { transform: "rotate(14deg)" },
+          "40%": { transform: "rotate(-4deg)" },
+          "50%": { transform: "rotate(10.0deg)" },
+          "60%": { transform: "rotate(0.0deg)" },
+          "100%": { transform: "rotate(0.0deg)" },
         },
       },
       animation: {
-        'waving-hand': 'wave 2s linear infinite',
+        "waving-hand": "wave 2s linear infinite",
       },
     },
   },

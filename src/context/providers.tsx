@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { Suspense, lazy } from 'react'
+import { Suspense, lazy } from "react";
 import { ThemeProvider } from "next-themes";
 
-import Loading from '../app/loading'
+import Loading from "../app/loading";
 
 type Props = {
-    children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
-const BackgroundVideo = lazy(() => import('../components/background-video'))
+const BackgroundVideo = lazy(() => import("../components/background-video"));
 
 const Providers = ({ children }: Props) => (
   <ThemeProvider enableSystem={false} attribute="class">

@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import Providers from "../context/providers";
-import Navbar from '../components/navbar'
-import Footer from '../components/footer'
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 import { ToastContainer } from "react-toastify";
 

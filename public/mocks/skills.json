@@ -1,137 +1,137 @@
 [
-    {
-        "imageUrl": "/icons/c-sharp.svg",
-        "name": "C#",
-        "type": "Backend"
-    },
-    {
-        "imageUrl": "/icons/python.svg",
-        "name": "Python",
-        "type": "Backend"
-    },
-    {
-        "imageUrl": "/icons/git.svg",
-        "name": "Git",
-        "type": "Version Control"
-    },
-    {
-        "imageUrl": "/icons/github.svg",
-        "name": "GitHub",
-        "type": "Version Control"
-    },
-    {
-        "imageUrl": "/icons/gitlab.svg",
-        "name": "GitLab",
-        "type": "Version Control"
-    },
-    {
-        "imageUrl": "/icons/javascript.svg",
-        "name": "JavaScript",
-        "type": "Frontend"
-    },
-    {
-        "imageUrl": "/icons/typescript.svg",
-        "name": "TypeScript",
-        "type": "Frontend"
-    },
-    {
-        "imageUrl": "/icons/mongodb.svg",
-        "name": "MongoDB",
-        "type": "Database"
-    },
-    {
-        "imageUrl": "/icons/redis.svg",
-        "name": "Redis",
-        "type": "Cache-Database"
-    },
-    {
-        "imageUrl": "/icons/oracle.svg",
-        "name": "Oracle DB",
-        "type": "Database"
-    },
-    {
-        "imageUrl": "/icons/postgresql.svg",
-        "name": "PostgreSQL",
-        "type": "Database"
-    },
-    {
-        "imageUrl": "/icons/sql-server.svg",
-        "name": "SQL Server",
-        "type": "Database"
-    },
-    {
-        "imageUrl": "/icons/go.svg",
-        "name": "Golang",
-        "type": "Backend"
-    },
-    {
-        "imageUrl": "/icons/azure.svg",
-        "name": "Azure",
-        "type": "cloud"
-    },
-    {
-        "imageUrl": "/icons/easy-panel.svg",
-        "name": "Easy Panel",
-        "type": "cloud"
-    },
-    {
-        "imageUrl": "/icons/aws-sqs.svg",
-        "name": "SQS",
-        "type": "message broker"
-    },
-    {
-        "imageUrl": "/icons/rabbitmq.svg",
-        "name": "RabbitMQ",
-        "type": "message broker"
-    },
-    {
-        "imageUrl": "/icons/nextjs.svg",
-        "name": "Next",
-        "type": "Frontend"
-    },
-    {
-        "imageUrl": "/icons/angular.svg",
-        "name": "Angular",
-        "type": "Frontend"
-    },
-    {
-        "imageUrl": "/icons/nodejs.svg",
-        "name": "Node.js",
-        "type": "Backend"
-    },
-    {
-        "imageUrl": "/icons/flutter.svg",
-        "name": "Flutter",
-        "type": "Mobile"
-    },
-    {
-        "imageUrl": "/icons/react-native.svg",
-        "name": "React Native",
-        "type": "Mobile"
-    },
-    {
-        "imageUrl": "/icons/firebase.svg",
-        "name": "Firebase",
-        "type": "CI/CD"
-    },
-    {
-        "imageUrl": "/icons/docker.svg",
-        "name": "docker",
-        "type": "CI/CD"
-    },
-    {
-        "imageUrl": "/icons/kubernets.svg",
-        "name": "Kubernets",
-        "type": "CI/CD"
-    },
-    {
-        "imageUrl": "/icons/terraform.svg",
-        "name": "Terraform",
-        "type": "CI/CD"
-    },
-    {
-        "imageUrl": "/icons/app-center.svg",
-        "name": "App Center",
-        "type": "CI/CD"
-    }
+  {
+    "imageUrl": "/icons/c-sharp.svg",
+    "name": "C#",
+    "type": "Backend"
+  },
+  {
+    "imageUrl": "/icons/python.svg",
+    "name": "Python",
+    "type": "Backend"
+  },
+  {
+    "imageUrl": "/icons/git.svg",
+    "name": "Git",
+    "type": "Version Control"
+  },
+  {
+    "imageUrl": "/icons/github.svg",
+    "name": "GitHub",
+    "type": "Version Control"
+  },
+  {
+    "imageUrl": "/icons/gitlab.svg",
+    "name": "GitLab",
+    "type": "Version Control"
+  },
+  {
+    "imageUrl": "/icons/javascript.svg",
+    "name": "JavaScript",
+    "type": "Frontend"
+  },
+  {
+    "imageUrl": "/icons/typescript.svg",
+    "name": "TypeScript",
+    "type": "Frontend"
+  },
+  {
+    "imageUrl": "/icons/mongodb.svg",
+    "name": "MongoDB",
+    "type": "Database"
+  },
+  {
+    "imageUrl": "/icons/redis.svg",
+    "name": "Redis",
+    "type": "Cache-Database"
+  },
+  {
+    "imageUrl": "/icons/oracle.svg",
+    "name": "Oracle DB",
+    "type": "Database"
+  },
+  {
+    "imageUrl": "/icons/postgresql.svg",
+    "name": "PostgreSQL",
+    "type": "Database"
+  },
+  {
+    "imageUrl": "/icons/sql-server.svg",
+    "name": "SQL Server",
+    "type": "Database"
+  },
+  {
+    "imageUrl": "/icons/go.svg",
+    "name": "Golang",
+    "type": "Backend"
+  },
+  {
+    "imageUrl": "/icons/azure.svg",
+    "name": "Azure",
+    "type": "cloud"
+  },
+  {
+    "imageUrl": "/icons/easy-panel.svg",
+    "name": "Easy Panel",
+    "type": "cloud"
+  },
+  {
+    "imageUrl": "/icons/aws-sqs.svg",
+    "name": "SQS",
+    "type": "message broker"
+  },
+  {
+    "imageUrl": "/icons/rabbitmq.svg",
+    "name": "RabbitMQ",
+    "type": "message broker"
+  },
+  {
+    "imageUrl": "/icons/nextjs.svg",
+    "name": "Next",
+    "type": "Frontend"
+  },
+  {
+    "imageUrl": "/icons/angular.svg",
+    "name": "Angular",
+    "type": "Frontend"
+  },
+  {
+    "imageUrl": "/icons/nodejs.svg",
+    "name": "Node.js",
+    "type": "Backend"
+  },
+  {
+    "imageUrl": "/icons/flutter.svg",
+    "name": "Flutter",
+    "type": "Mobile"
+  },
+  {
+    "imageUrl": "/icons/react-native.svg",
+    "name": "React Native",
+    "type": "Mobile"
+  },
+  {
+    "imageUrl": "/icons/firebase.svg",
+    "name": "Firebase",
+    "type": "CI/CD"
+  },
+  {
+    "imageUrl": "/icons/docker.svg",
+    "name": "docker",
+    "type": "CI/CD"
+  },
+  {
+    "imageUrl": "/icons/kubernets.svg",
+    "name": "Kubernets",
+    "type": "CI/CD"
+  },
+  {
+    "imageUrl": "/icons/terraform.svg",
+    "name": "Terraform",
+    "type": "CI/CD"
+  },
+  {
+    "imageUrl": "/icons/app-center.svg",
+    "name": "App Center",
+    "type": "CI/CD"
+  }
 ]

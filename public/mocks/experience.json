@@ -1,28 +1,28 @@
 [
-    {
-        "title": "Software Enginner (intern.)",
-        "company_name": "Irroba",
-        "icon": "/company/irroba.jpeg",
-        "iconBg": "#E3022C",
-        "date": "jan 2022 - jun 2022",
-        "points": [
-            "Developing and maintaining full-stack applications using PHP and other related technologies.",
-            "Contributed by documenting several features, including MFA, within the knowledge base.",
-            "Assisted in facilitating conversations with end users to reduce the churn rate. By engaging with customers directly, I was able to identify pain points and gather useful feedbacks."
-        ]
-    },
-    {
-        "title": "Software Enginner",
-        "company_name": "Q2 Group",
-        "icon": "/company/q2.jpg",
-        "iconBg": "#234EF2",
-        "date": "Jun 2022 - Present",
-        "points": [
-            "Designed and implemented scalable APIs and background workers for managing first- and third-party proprietary licenses that serve millions (e.g., approximately 8000 rpm) of license.",
-            "Led the design and development of multiple enterprise-level microservice application, resulting in a significant reduction SLA (24,3%) time.",
-            "Improve microservices reliability by adding load/stress, unit, integration, and end-to-end (e2e) testing pipelines.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Participating in code reviews and providing constructive feedback to other developers."
-        ]
-    }
+  {
+    "title": "Software Enginner (intern.)",
+    "company_name": "Irroba",
+    "icon": "/company/irroba.jpeg",
+    "iconBg": "#E3022C",
+    "date": "jan 2022 - jun 2022",
+    "points": [
+      "Developing and maintaining full-stack applications using PHP and other related technologies.",
+      "Contributed by documenting several features, including MFA, within the knowledge base.",
+      "Assisted in facilitating conversations with end users to reduce the churn rate. By engaging with customers directly, I was able to identify pain points and gather useful feedbacks."
+    ]
+  },
+  {
+    "title": "Software Enginner",
+    "company_name": "Q2 Group",
+    "icon": "/company/q2.jpg",
+    "iconBg": "#234EF2",
+    "date": "Jun 2022 - Present",
+    "points": [
+      "Designed and implemented scalable APIs and background workers for managing first- and third-party proprietary licenses that serve millions (e.g., approximately 8000 rpm) of license.",
+      "Led the design and development of multiple enterprise-level microservice application, resulting in a significant reduction SLA (24,3%) time.",
+      "Improve microservices reliability by adding load/stress, unit, integration, and end-to-end (e2e) testing pipelines.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Participating in code reviews and providing constructive feedback to other developers."
+    ]
+  }
 ]

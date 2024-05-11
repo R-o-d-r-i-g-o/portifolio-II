@@ -1,9 +1,9 @@
 import { ReactNode } from "react";
 
 type Props = {
-    message: string
-    children: ReactNode
-}
+  message: string;
+  children: ReactNode;
+};
 
 const Tooltip = ({ message, children }: Props) => (
   <div className="group relative flex max-w-max flex-col items-center justify-center">

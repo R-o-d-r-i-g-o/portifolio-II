@@ -34,7 +34,7 @@ const CubeAnimation = () => {
 
 const BoxElement = () => {
   const texture = useTexture(
-    "https://avatars.githubusercontent.com/u/89111957?v=4"
+    "https://avatars.githubusercontent.com/u/89111957?v=4",
   );
 
   return (

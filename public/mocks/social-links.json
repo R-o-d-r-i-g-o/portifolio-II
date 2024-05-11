@@ -1,17 +1,17 @@
 [
-    {
-        "name": "Contact",
-        "iconUrl": "/icons/contact.svg",
-        "link": "/contact"
-    },
-    {
-        "name": "GitHub",
-        "iconUrl": "/icons/github-blue.svg",
-        "link": "https://github.com/R-o-d-r-i-g-o"
-    },
-    {
-        "name": "LinkedIn",
-        "iconUrl": "/icons/linkedin.svg",
-        "link": "https://www.linkedin.com/in/rodrigo-marques-ribeiro/"
-    }
+  {
+    "name": "Contact",
+    "iconUrl": "/icons/contact.svg",
+    "link": "/contact"
+  },
+  {
+    "name": "GitHub",
+    "iconUrl": "/icons/github-blue.svg",
+    "link": "https://github.com/R-o-d-r-i-g-o"
+  },
+  {
+    "name": "LinkedIn",
+    "iconUrl": "/icons/linkedin.svg",
+    "link": "https://www.linkedin.com/in/rodrigo-marques-ribeiro/"
+  }
 ]
